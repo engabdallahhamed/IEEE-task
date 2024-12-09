@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+)
+
+func combineWords(word1 string, word2 string) string {
+	var result string
+
+	maxLength := len(word1)
+	if len(word2) > maxLength {
+		maxLength = len(word2)
+	}
+
+	for i := 0; i < maxLength; i++ {
+		if i < len(word1) {
+			result += string(word1[i])
+		}
+		if i < len(word2) {
+			result += string(word2[i])
+		}
+	}
+	return result
+}
+
+func main() {
+	combined := combineWords("iWRS", "tOK")
+	fmt.Println("Combined Word:", combined)
+}
