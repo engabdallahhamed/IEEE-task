@@ -1,0 +1,7 @@
+- In OOP, which of the following is the conceptual framework that outlines the characteristics and actions of a particular entity?
+    1. Object
+    2. Class
+    3. Method
+    4. Constructor
+
+Thw correct ans : C
