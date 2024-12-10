@@ -1,0 +1,20 @@
+
+CREATE TABLE ieee (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    phone VARCHAR(18),
+    email VARCHAR(50),
+    age INT,
+    job VARCHAR(50),
+    departmentId INT
+);
+
+INSERT INTO ieee (id, name, phone, email, age, job, departmentId) 
+VALUES 
+(1, 'Seif El-Din Sweilam', '+1092439823', 'saifsweelam@ieee.org', 22, 'Software Engineer', 5),
+(2, 'Mohamed ElGamal', '+1094847872', 'elgamal@ieee.org', 23, 'Backend Developer', 4),
+(3, 'Mohamed Yasser', '+1097667632', 'elshahaby@ieee.org', 21, 'MD', 5);
+
+SELECT name, phone, email 
+FROM ieee 
+WHERE age > 20;
